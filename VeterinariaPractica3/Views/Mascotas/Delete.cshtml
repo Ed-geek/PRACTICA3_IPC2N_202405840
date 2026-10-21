@@ -1,0 +1,16 @@
+@model Mascota
+@{
+    ViewData["Title"] = "Eliminar mascota";
+}
+
+<h1>Eliminar mascota</h1>
+
+<div class="alert">
+    ¿Estás seguro de eliminar a <strong>@Model.Nombre</strong> (@Model.Tipo)?
+    Esta acción no se puede deshacer.
+</div>
+
+<form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+    <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

@@ -102,8 +102,10 @@ public class MascotasController : Controller
         var m = _service.ObtenerPorId(id);
         if (m == null) return NotFound();
 
-        TempData["DosisCalculada"] = m.CalcularDosis(dosisPorKilogramo);
-        TempData["DosisPorKg"] = dosisPorKilogramo;
+        // 👇 Convertimos a string para que TempData no falle
+        TempData["DosisCalculada"] = m.CalcularDosis(dosisPorKilogramo).ToString("0.00");
+        TempData["DosisPorKg"] = dosisPorKilogramo.ToString("0.00");
+        
         return RedirectToAction(nameof(Details), new { id });
     }
 

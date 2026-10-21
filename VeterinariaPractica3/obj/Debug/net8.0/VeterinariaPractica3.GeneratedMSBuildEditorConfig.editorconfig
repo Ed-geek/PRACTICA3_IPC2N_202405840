@@ -18,6 +18,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/eduardo/Documentos/Usac/SEMESTRE/Semestre6/LAB-IPC2/PRACTICAS/PRACTICA3_IPC2N_202405840/VeterinariaPractica3
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/eduardo/Documentos/Usac/SEMESTRE/Semestre6/LAB-IPC2/PRACTICAS/PRACTICA3_IPC2N_202405840/VeterinariaPractica3/Views/Mascotas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzY290YXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/eduardo/Documentos/Usac/SEMESTRE/Semestre6/LAB-IPC2/PRACTICAS/PRACTICA3_IPC2N_202405840/VeterinariaPractica3/Views/Mascotas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzY290YXMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/eduardo/Documentos/Usac/SEMESTRE/Semestre6/LAB-IPC2/PRACTICAS/PRACTICA3_IPC2N_202405840/VeterinariaPractica3/Views/Mascotas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzY290YXMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/eduardo/Documentos/Usac/SEMESTRE/Semestre6/LAB-IPC2/PRACTICAS/PRACTICA3_IPC2N_202405840/VeterinariaPractica3/Views/Mascotas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzY290YXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/eduardo/Documentos/Usac/SEMESTRE/Semestre6/LAB-IPC2/PRACTICAS/PRACTICA3_IPC2N_202405840/VeterinariaPractica3/Views/Mascotas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzY290YXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/eduardo/Documentos/Usac/SEMESTRE/Semestre6/LAB-IPC2/PRACTICAS/PRACTICA3_IPC2N_202405840/VeterinariaPractica3/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

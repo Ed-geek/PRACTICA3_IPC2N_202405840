@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "VeterinariaPractica3/1.0.0": {
+        "runtime": {
+          "VeterinariaPractica3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VeterinariaPractica3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
