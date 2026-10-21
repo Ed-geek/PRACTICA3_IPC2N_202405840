@@ -3,39 +3,46 @@
     ViewData["Title"] = "Detalle de mascota";
 }
 
-<h1>@Model.Nombre <small>(@Model.Tipo)</small></h1>
+<div class="flex-between" style="margin-bottom: 1.5rem;">
+    <h1>@Model.Nombre</h1>
+    <span class="badge @(Model.Enferma ? "badge-enferma" : "badge-sana")" style="font-size: 1rem;">
+        @(Model.Enferma ? "Enferma" : "Sana")
+    </span>
+</div>
 
-<table>
-    <tr><th>ID</th><td>@Model.Id</td></tr>
-    <tr><th>Tipo</th><td>@Model.Tipo</td></tr>
-    <tr><th>Nombre</th><td>@Model.Nombre</td></tr>
-    <tr><th>Raza</th><td>@Model.Raza</td></tr>
-    <tr><th>Edad</th><td>@Model.Edad años</td></tr>
-    <tr><th>Peso</th><td>@Model.Peso kg</td></tr>
-    <tr><th>Estado</th><td>@(Model.Enferma ? "🤒 Enferma" : "✅ Sana")</td></tr>
-</table>
+<div class="table-container" style="margin-bottom: 2rem;">
+    <table>
+        <tr><th style="width: 30%;">ID</th><td>#@Model.Id</td></tr>
+        <tr><th>Tipo</th><td>@Model.Tipo</td></tr>
+        <tr><th>Raza</th><td>@Model.Raza</td></tr>
+        <tr><th>Edad</th><td>@Model.Edad años</td></tr>
+        <tr><th>Peso</th><td>@Model.Peso kg</td></tr>
+    </table>
+</div>
 
-<h2>Cálculo de dosis</h2>
-<form asp-action="CalcularDosis" asp-route-id="@Model.Id" method="post">
-    <div class="form-group">
-        <label for="dosisPorKilogramo">Dosis por kilogramo (mg/kg)</label>
-        <input id="dosisPorKilogramo" name="dosisPorKilogramo" type="number" step="0.01" min="0" required />
-    </div>
-    <button type="submit" class="btn">Calcular dosis</button>
-</form>
+<div class="form-card">
+    <h2 style="margin-top: 0;">Cálculo de dosis</h2>
+    <form asp-action="CalcularDosis" asp-route-id="@Model.Id" method="post">
+        <div class="form-group">
+            <label for="dosisPorKilogramo">Dosis por kilogramo (mg/kg)</label>
+            <input id="dosisPorKilogramo" name="dosisPorKilogramo" type="number" step="0.01" min="0" class="form-control" required />
+        </div>
+        <button type="submit" class="btn">Calcular dosis</button>
+    </form>
 
-@if (TempData["DosisCalculada"] is string dosisStr && double.TryParse(dosisStr, out double dosis))
-{
-    <div class="alert">
-        <strong>Dosis total ajustada:</strong> @dosis.ToString("0.00") mg
-        <br />
-        <small>
-            Cálculo: @Model.Peso kg × @TempData["DosisPorKg"] mg/kg ×
-            factor @Model.Tipo = @dosis.ToString("0.00") mg
-        </small>
-    </div>
-}
+    @if (TempData["DosisCalculada"] is string dosisStr && double.TryParse(dosisStr, out double dosis))
+    {
+        <div class="alert" style="margin-bottom: 0;">
+            <strong>Dosis total ajustada:</strong> @dosis.ToString("0.00") mg
+            <br />
+            <small style="opacity: 0.8;">
+                Cálculo: @Model.Peso kg × @TempData["DosisPorKg"] mg/kg ×
+                factor @Model.Tipo = @dosis.ToString("0.00") mg
+            </small>
+        </div>
+    }
+</div>
 
-<p style="margin-top:1.5rem">
+<p style="margin-top: 2rem;">
     <a asp-action="Index" class="btn btn-secondary">← Volver al listado</a>
 </p>
