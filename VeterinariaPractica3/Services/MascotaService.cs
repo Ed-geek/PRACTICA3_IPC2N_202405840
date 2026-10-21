@@ -4,7 +4,7 @@ namespace VeterinariaPractica3.Services;
 
 public class MascotaService
 {
-    // Uso de List<T> permitido por la aclaración del docente
+    
     private readonly List<Mascota> _lista = new();
     private int _siguienteId = 1;
 
