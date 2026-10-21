@@ -6,10 +6,10 @@
 **Semestre:** Segundo Semestre 2026  
 
 ## 👤 Datos del Estudiante
-* **Nombre:** [Tu Nombre Completo]
-* **Carnet:** [Tu Carnet, ej. 202405840]
-* **Sección:** [Tu Sección, ej. N]
-* **Auxiliar Asignado:** [Nombre del auxiliar de tu sección]
+* **Nombre:** Angel Balcárcel
+* **Carnet:** 202405840
+* **Sección:** N
+* **Auxiliar Asignado:** Jorge Mejía
 
 ---
 
@@ -65,4 +65,4 @@ El proyecto sigue una estructura estricta del patrón MVC, separando las respons
 ### Pasos
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone [URL_DE_TU_REPOSITORIO]
+   git clone https://github.com/Ed-geek/PRACTICA3_IPC2N_202405840.git
